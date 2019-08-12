@@ -5,7 +5,7 @@ A simple EU4 modding project.
 This adds some new colonial regions,
 
 ## Image
-!(https://lh3.googleusercontent.com/BdQ1ngugnmV6uT960KOX0G9av7YJF4MnoEdSgi5xBINEC4YYuOp3Q7RUj7i4Cg0tRQ=w884-rwa)
+!(https://steamuserimages-a.akamaihd.net/ugc/951841177136956975/76260BDED94A319BDE93042E2355B219EAE20EF2/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true)
 
 ## Install
 Just "Subscribe" on Steam Workshop (https://steamcommunity.com/sharedfiles/filedetails/?id=1463748057)
