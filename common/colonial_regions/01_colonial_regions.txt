@@ -14,12 +14,32 @@ Colonial-Abisynia = {
 	}
 }
 
+# Afganistan
+Colonial-Afganistan = {
+	color = { 102 128 52 }
+
+	provinces = {
+		448 451 452 578 2226 #kabulistan_area
+		450 2227 2228 #balkh_area
+		447 449 2225 #ghor_area
+		576 577 2068 #kalat_area
+		2077 2078 4511 #sind_sagar_area
+		505 2072 4505 #northern_sindh_area
+	}
+	
+	# Generic
+	names = {
+		name = "[Root.GetAdjective] Afganistan"
+	}
+}
+
+
 # Algeria
 Colonial-Algeria = {
 	color = { 240 150 150 }
 
 	provinces = {
-		336 337 338 339 2461 2462 2463 2459 2458 351 2456 2457 2472 350 2465
+		336 337 338 339 2461 2462 2463 2459 2458 351 2456 2457 2472 350 2465 4562
 	}
 	
 	# Generic
@@ -41,6 +61,42 @@ Colonial-Arabia = {
 	# Generic
 	names = {
 		name = "[Root.GetAdjective] Arabia"
+	}
+}
+
+# Astrakhan
+Colonial-Astrakhan = {
+	color = { 26 27 154 }
+
+	provinces = {
+		288 303 465 467 469 470 474 1971 2365 2367 2366 2409 2418 2419 472 471 464 466 468 2416 2417 
+		302 304 2415 #tambov_area
+		425 2198 2199 2208 4306 #dagestan_area
+	}
+	
+	# Generic
+	names = {
+		name = "[Root.GetAdjective] Astrakhan"
+	}
+}
+
+# Burma
+Colonial-Burma = {
+	color = { 250 240 215 }
+
+	provinces = {
+		584 2399 581 #upper_burma_area
+		2398 580 4393 2397 #chindwin_area
+		586 590 1815 2403 4399 #lower_burma_area
+		4394 4396 585 4395 #central_burma_area
+		583 588 2400 4397 4406 #shan_hill_area
+		587 2401 4398 #karenni_area 
+		582 2395 2396 4404 4405 #kachin_area
+	}
+	
+	# Generic
+	names = {
+		name = "[Root.GetAdjective] Bruma"
 	}
 }
 
@@ -82,7 +138,7 @@ Colonial-China = {
 		 679 2167 660 661 2165 2166 680 679 680 4212 2169 2170 4211 675 2168 2748 4213 #Chengdu
 		 2161 1371 664 665 666 667 668 672 738 1840 2154 2155 2156 2157 2158 2159 2160 2162 2163 2164 2173 2174 671 2373 662 663 673 674 4199 #Canton
 		 669 670 683 684 685 686 1821 1822 1824 1829 1833 1838 1897 2143 2144 2145 2146 2147 2148 2149 2150 2151 2152 2153 2141 2142 4196 #Hangzhou
-		 690 691 723 2138 2139 2140 2115 703 1816 2136 4194 695 696 2137 4195 704 726 2111 2112 2113 693 694 697 2177 2178 4233 #Beijing
+		 690 691 723 2138 2139 2140 2115 703 1816 2136 4194 695 696 2137 4195 2111 693 694 697 2177 2178 4233 #Beijing
 		 687 1836 2181 2180 698 699 688 692 2183 2175 2176 681 682 2171 2172 4197 689 700 2179 4198 #Xian
 		 2184 2182 708 707
 	}	
@@ -132,7 +188,6 @@ Colonial-India = {
 		512 4502 4507 2066 #jangladesh_area
 		513 514 2067 4506 #marwar_area
 		504 2088 4503 4504 #sindh_area
-		505 2072 4505 #northern_sindh_area
 		529 530 2089 4429 #konkan_area
 		515 521 2052 4454 4455 #saurashtra_area
 		517 2036 4430 #tapti_area
@@ -147,17 +202,10 @@ Colonial-India = {
 		562 2045 2046 4486 #north_bengal_area
 		563 2044 4479 #gaur_area
 		568 579 2402 #arakan_area
-		586 590 1815 2403 4399 #lower_burma_area
 		558 4469 4472 4489 #bihar_area
 		2047 4484 4487 4488 #mithila_area
 		570 573 2041 #naga_hills_area
-		584 2399 581 #upper_burma_area
-		2398 580 4393 2397 #chindwin_area
 		566 571 2040 2042 4440 #assam_area
-		4394 4396 585 4395 #central_burma_area
-		583 588 2400 4397 4406 #shan_hill_area
-		587 2401 4398 #karenni_area 
-		582 2395 2396 4404 4405 #kachin_area
 		567 2091 4473 #tripura_area
 		2083 4418 4419 4420 #north_carnatic_area
 		539 540 1947 2027 4417 #south_carnatic_area
@@ -197,12 +245,7 @@ Colonial-India = {
 		508 2073 2074 4449 4521 #kashmir_area
 		507 2075 2076 4510 4513 #lahore_area
 		506 2079 2086 4508 4509 #multan_area
-		2077 2078 4511 #sind_sagar_area
 		510 2065 4411 4463 #sirhind_area
-		576 577 2068 #kalat_area
-		448 451 452 578 2226 #kabulistan_area
-		447 449 2225 #ghor_area
-		450 2227 2228 #balkh_area
 	}
 	
 	# Generic
@@ -329,6 +372,25 @@ Colonial-Madagascar = {
 	names = {
 		name = "[Root.GetAdjective] Madagascar"
 	}
+}
+
+# Manchuria
+Colonial-Manchuria = {
+	color = { 165 132 57 }
+	
+
+	provinces = {
+		1850 1049 2107 2108 2111 2106 2186 1058 2102 2104 1053 2103 1034 1035 1036 1037 1038 1039 1040 1041 1042 1043 1044 1046 1047 1052 1783 2438 2439 2440 2446 1055 1056 1057 730 2110 2188 4201 1033 1048 1050 4214 4216 729 731 2105 4215 4217 722 2109 2187 4202 4203 724 725 4218 727 728 2185 4200
+		4654 4655 4656 4657 4658 4659 4660 4661 4662 4653 4663
+		4664 4665 4674 4675 4672 2115
+		726 2112 2113 4652 704
+	}
+	
+	# Generic
+	names = {
+		name = "[Root.GetAdjective] Manchuria"
+	}
+	
 }
 
 # Moluccas
@@ -606,6 +668,7 @@ Colonial-Tibet = {
 		565 4481 4482 #bhutan_area
 		4514 4515 4516 4517 4518 4519 4520 #new tibetan provinces
 		2133 2131 2132 2135 678
+		557 2070 2071 4483 4485
 	}
 	
 	# Generic
@@ -633,7 +696,7 @@ Colonial-Tunisia = {
 	color = { 255 0 0 }
 
 	provinces = {
-		340 1882 353 2954 2455 341 2473 2453 2454 352
+		340 1882 353 2954 2455 341 2473 2453 2454 352 4566
 	}
 	
 	# Generic
