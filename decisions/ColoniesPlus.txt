@@ -1,10 +1,10 @@
 country_decisions = {
 	debug_colonies_plus = {
 		potential = {
-			always = yes
+			ai = no
 		}
 		allow = {
-			always = yes
+			ai = no
 		}
 		effect = {
 			grant_independence = yes
@@ -108,8 +108,9 @@ country_decisions = {
 			set_country_flag = changed_from_colonial_nation
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 400
 		}
+		ai_importance = 800
 	}
 	form_kongo_nation = {
 		major = yes
@@ -202,6 +203,7 @@ country_decisions = {
 		ai_will_do = {
 			factor = 10
 		}
+		ai_importance = 400
 	}
 	form_morocco_nation = {
 		major = yes
@@ -294,6 +296,7 @@ country_decisions = {
 		ai_will_do = {
 			factor = 10
 		}
+		ai_importance = 400
 	}
 	form_algiers_nation = {
 		major = yes
@@ -386,6 +389,7 @@ country_decisions = {
 		ai_will_do = {
 			factor = 10
 		}
+		ai_importance = 400
 	}
 	form_tripoli_nation = {
 		major = yes
@@ -478,6 +482,7 @@ country_decisions = {
 		ai_will_do = {
 			factor = 10
 		}
+		ai_importance = 400
 	}
 	form_tunis_nation = {
 		major = yes
@@ -570,6 +575,7 @@ country_decisions = {
 		ai_will_do = {
 			factor = 10
 		}
+		ai_importance = 400
 	}
 	form_ethiopia_nation = {
 		major = yes
@@ -662,6 +668,7 @@ country_decisions = {
 		ai_will_do = {
 			factor = 10
 		}
+		ai_importance = 400
 	}
 	form_syria_nation = {
 		major = yes
@@ -754,6 +761,7 @@ country_decisions = {
 		ai_will_do = {
 			factor = 10
 		}
+		ai_importance = 400
 	}
 	form_iraq_nation = {
 		major = yes
@@ -846,6 +854,7 @@ country_decisions = {
 		ai_will_do = {
 			factor = 10
 		}
+		ai_importance = 400
 	}
 	form_persia_nation = {
 		major = yes
@@ -938,6 +947,7 @@ country_decisions = {
 		ai_will_do = {
 			factor = 10
 		}
+		ai_importance = 400
 	}
 	form_afganistan_nation = {
 		major = yes
@@ -1030,6 +1040,7 @@ country_decisions = {
 		ai_will_do = {
 			factor = 10
 		}
+		ai_importance = 400
 	}
 	form_tibet_nation = {
 		major = yes
@@ -1119,9 +1130,7 @@ country_decisions = {
 			add_prestige = 25
 			set_country_flag = changed_from_colonial_nation
 		}
-		ai_will_do = {
-			factor = 10
-		}
+		ai_importance = 400
 	}
 	form_mongolia_nation = {
 		major = yes
@@ -1214,6 +1223,7 @@ country_decisions = {
 		ai_will_do = {
 			factor = 10
 		}
+		ai_importance = 400
 	}
 	form_taungu_nation = {
 		major = yes
@@ -1306,6 +1316,7 @@ country_decisions = {
 		ai_will_do = {
 			factor = 10
 		}
+		ai_importance = 400
 	}
 	form_manchu_nation = {
 		major = yes
@@ -1398,6 +1409,7 @@ country_decisions = {
 		ai_will_do = {
 			factor = 10
 		}
+		ai_importance = 400
 	}
 	form_korea_nation = {
 		major = yes
@@ -1490,6 +1502,7 @@ country_decisions = {
 		ai_will_do = {
 			factor = 10
 		}
+		ai_importance = 400
 	}
 	form_japan_nation = {
 		major = yes
@@ -1582,5 +1595,6 @@ country_decisions = {
 		ai_will_do = {
 			factor = 10
 		}
+		ai_importance = 400
 	}
 }
