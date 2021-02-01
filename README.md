@@ -3,6 +3,7 @@ Colonies+ Continued
 
 A simple EU4 modding project.
 This adds some new colonial regions,  
+formable nations are being worked on and underway!
 Welcome Pull Request...
 
 ## Image
