@@ -430,7 +430,7 @@ country_decisions = {
 				is_city = yes
 			}
 			NOT = {
-				exists = TUN
+				exists = TRP
 			}
 		}
 		effect = {
@@ -446,7 +446,7 @@ country_decisions = {
 					}
 				}
 			}
-			change_tag = TUN
+			change_tag = TRP
 			if = {
 				limit = {
 					NOT = {
@@ -470,7 +470,7 @@ country_decisions = {
 						owned_by = ROOT
 					}
 				}
-				add_permanent_claim = TUN
+				add_permanent_claim = TRP
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -523,7 +523,7 @@ country_decisions = {
 				is_city = yes
 			}
 			NOT = {
-				exists = TRP
+				exists = TUN
 			}
 		}
 		effect = {
@@ -539,7 +539,7 @@ country_decisions = {
 					}
 				}
 			}
-			change_tag = TRP
+			change_tag = TUN
 			if = {
 				limit = {
 					NOT = {
@@ -563,7 +563,7 @@ country_decisions = {
 						owned_by = ROOT
 					}
 				}
-				add_permanent_claim = TRP
+				add_permanent_claim = TUN
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -1770,6 +1770,471 @@ country_decisions = {
 					}
 				}
 				add_permanent_claim = AST
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = changed_from_colonial_nation
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		ai_importance = 400
+	}
+	form_mali_nation = {
+		major = yes
+		potential = {
+			NOT = {
+				has_country_flag = changed_from_colonial_nation
+			}
+			is_nomad = no
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				is_former_colonial_nation = yes
+				is_colonial_nation = yes
+				capital_scope = {
+					colonial_region = Colonial-West-Africa
+					is_core = ROOT
+				}
+			}
+		}
+		provinces_to_highlight = {
+			colonial_region = Colonial-West-Africa
+			OR = {
+				NOT = {
+					owned_by = ROOT
+				}
+				is_city = no
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			capital_scope = {
+				colonial_region = Colonial-West-Africa
+				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 10
+				colonial_region = Colonial-West-Africa
+				is_city = yes
+			}
+			NOT = {
+				exists = MAL
+			}
+		}
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							is_former_colonial_nation = yes
+						}
+					}
+					ROOT = {
+						save_event_target_as = old_tag_target
+					}
+				}
+			}
+			change_tag = MAL
+			if = {
+				limit = {
+					NOT = {
+						is_former_colonial_nation = yes
+					}
+				}
+				restore_old_nation_on_formation_effect = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 2
+					}
+				}
+				set_government_rank = 2
+			}
+			Colonial-West-Africa = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = MAL
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = changed_from_colonial_nation
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		ai_importance = 400
+	}
+	form_malaya_nation = {
+		major = yes
+		potential = {
+			NOT = {
+				has_country_flag = changed_from_colonial_nation
+			}
+			is_nomad = no
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				is_former_colonial_nation = yes
+				is_colonial_nation = yes
+				capital_scope = {
+					colonial_region = Colonial-Indonesia
+					is_core = ROOT
+				}
+			}
+		}
+		provinces_to_highlight = {
+			colonial_region = Colonial-Indonesia
+			OR = {
+				NOT = {
+					owned_by = ROOT
+				}
+				is_city = no
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			capital_scope = {
+				colonial_region = Colonial-Indonesia
+				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 10
+				colonial_region = Colonial-Indonesia
+				is_city = yes
+			}
+			NOT = {
+				exists = MSA
+			}
+		}
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							is_former_colonial_nation = yes
+						}
+					}
+					ROOT = {
+						save_event_target_as = old_tag_target
+					}
+				}
+			}
+			change_tag = MSA
+			if = {
+				limit = {
+					NOT = {
+						is_former_colonial_nation = yes
+					}
+				}
+				restore_old_nation_on_formation_effect = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 2
+					}
+				}
+				set_government_rank = 2
+			}
+			Colonial-Indonesia = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = MSA
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = changed_from_colonial_nation
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		ai_importance = 400
+	}
+	form_sibir_nation = {
+		major = yes
+		potential = {
+			NOT = {
+				has_country_flag = changed_from_colonial_nation
+			}
+			is_nomad = no
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				is_former_colonial_nation = yes
+				is_colonial_nation = yes
+				capital_scope = {
+					colonial_region = Colonial-Siberia
+					is_core = ROOT
+				}
+			}
+		}
+		provinces_to_highlight = {
+			colonial_region = Colonial-Siberia
+			OR = {
+				NOT = {
+					owned_by = ROOT
+				}
+				is_city = no
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			capital_scope = {
+				colonial_region = Colonial-Siberia
+				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 10
+				colonial_region = Colonial-Siberia
+				is_city = yes
+			}
+			NOT = {
+				exists = SIB
+			}
+		}
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							is_former_colonial_nation = yes
+						}
+					}
+					ROOT = {
+						save_event_target_as = old_tag_target
+					}
+				}
+			}
+			change_tag = SIB
+			if = {
+				limit = {
+					NOT = {
+						is_former_colonial_nation = yes
+					}
+				}
+				restore_old_nation_on_formation_effect = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 2
+					}
+				}
+				set_government_rank = 2
+			}
+			Colonial-Siberia = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = SIB
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = changed_from_colonial_nation
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		ai_importance = 400
+	}
+	form_bukhara_nation = {
+		major = yes
+		potential = {
+			NOT = {
+				has_country_flag = changed_from_colonial_nation
+			}
+			is_nomad = no
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				is_former_colonial_nation = yes
+				is_colonial_nation = yes
+				capital_scope = {
+					colonial_region = Colonial-Central-Asia
+					is_core = ROOT
+				}
+			}
+		}
+		provinces_to_highlight = {
+			colonial_region = Colonial-Centarl-Asia
+			OR = {
+				NOT = {
+					owned_by = ROOT
+				}
+				is_city = no
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			capital_scope = {
+				colonial_region = Colonial-Central-Asia
+				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 10
+				colonial_region = Colonial-Central-Asia
+				is_city = yes
+			}
+			NOT = {
+				exists = BUK
+			}
+		}
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							is_former_colonial_nation = yes
+						}
+					}
+					ROOT = {
+						save_event_target_as = old_tag_target
+					}
+				}
+			}
+			change_tag = BUK
+			if = {
+				limit = {
+					NOT = {
+						is_former_colonial_nation = yes
+					}
+				}
+				restore_old_nation_on_formation_effect = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 2
+					}
+				}
+				set_government_rank = 2
+			}
+			Colonial-Central-Asia = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = BUK
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = changed_from_colonial_nation
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		ai_importance = 400
+	}
+	form_hindustan_nation = {
+		major = yes
+		potential = {
+			NOT = {
+				has_country_flag = changed_from_colonial_nation
+			}
+			is_nomad = no
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				is_former_colonial_nation = yes
+				is_colonial_nation = yes
+				capital_scope = {
+					colonial_region = Colonial-India
+					is_core = ROOT
+				}
+			}
+		}
+		provinces_to_highlight = {
+			colonial_region = Colonial-India
+			OR = {
+				NOT = {
+					owned_by = ROOT
+				}
+				is_city = no
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			capital_scope = {
+				colonial_region = Colonial-India
+				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 10
+				colonial_region = Colonial-India
+				is_city = yes
+			}
+			NOT = {
+				exists = HIN
+			}
+		}
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							is_former_colonial_nation = yes
+						}
+					}
+					ROOT = {
+						save_event_target_as = old_tag_target
+					}
+				}
+			}
+			change_tag = HIN
+			if = {
+				limit = {
+					NOT = {
+						is_former_colonial_nation = yes
+					}
+				}
+				restore_old_nation_on_formation_effect = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 2
+					}
+				}
+				set_government_rank = 2
+			}
+			Colonial-India = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = HIN
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
